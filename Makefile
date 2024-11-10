@@ -1,7 +1,7 @@
 exec = pixelux.out
 sources = $(wildcard src/*.c)
 objects = $(sources: .c = .o)
-flags = -g -Wall -lm -ldl -fPIC -rdynamic
+flags = -g -Wall -lm -ldl -fPIC -rdynamic -lX11
 
 $(exec): $(objects)
 	gcc $(objects) $(flags) -o $(exec) -lm
