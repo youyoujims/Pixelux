@@ -62,7 +62,7 @@ void pixelux_fill_circle(uint32_t *pixels, size_t width, size_t height, int xp, 
    }
 }
 
-void pixelux_gradient(uint32_t *pixels, size_t width, size_t height, int xp, int yp, int w, int h, int color1, int color2){
+void pixelux_gradient_rect(uint32_t *pixels, size_t width, size_t height, int xp, int yp, int w, int h, int color1, int color2){
     pixelux_fill_rect(pixels, width, height, xp, yp, w, h, color1);
     for(int y = 0; y < h; y++){
         for(int x = 0; x < w; x++){
