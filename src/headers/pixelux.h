@@ -9,7 +9,7 @@ void pixelux_draw_rect(uint32_t *pixels, size_t width, size_t height, int xp, in
 
 void pixelux_fill_circle(uint32_t *pixels, size_t width, size_t height, int xp, int yp, int r, int color);
 
-/* -The colors must have a alpha value. exemple: if your color is 0xff00ff(red) then it must be 0xffff00ff (the first two ff define the opacity*/
+/* -The colors must have a alpha value. If your color is 0xff00ff(pink) then it must be 0xffff00ff (the first two ff define the opacity*/
 void pixelux_gradient_rect(uint32_t *pixels, size_t width, size_t height, int xp, int yp, int w, int h, int color1, int color2);
 
 uint32_t pixelux_mix_colors(uint32_t color1, uint32_t color2);

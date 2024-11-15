@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "headers/pixelux.h"
 #include <string.h>
-#include "headers/window.h"
+//#include "headers/window.h"
 #define WIDTH 800
 #define HEIGHT 600
 static uint32_t pixels[WIDTH*HEIGHT];
@@ -13,8 +13,7 @@ int string_ends_with(const char * str, const char * suffix)
   int suffix_len = strlen(suffix);
 
   return 
-    (str_len >= suffix_len) &&
-    (0 == strcmp(str + (str_len-suffix_len), suffix));
+    (str_len >= suffix_len) && (0 == strcmp(str + (str_len-suffix_len), suffix));
 }
 
 int main(int argc, char** argv){
@@ -26,7 +25,7 @@ int main(int argc, char** argv){
 //        printf("\033[0;31m\e[1mError\e[1m: The name of the file must ends with .ppm \n\033[0m");
 //        return 1;
 //    }
-    window* window = init_window("Bruh", 0, 0, WIDTH, HEIGHT, 0);
-    show(window);
+//    window* window = init_window("Bruh", 0, 0, WIDTH, HEIGHT, 0);
+//    show(window);
     return EXIT_SUCCESS;
 }
